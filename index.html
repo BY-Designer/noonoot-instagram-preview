@@ -109,6 +109,64 @@
       .dialog .media{width:min(100vw,47.2vh);height:auto!important;aspect-ratio:4/5!important}
       .dialog.is-reel .media{width:min(100vw,36.56vh);height:auto!important;aspect-ratio:9/16!important}
     }
+    /* Dedicated phone experience — desktop rules above remain unchanged */
+    @media(max-width:600px){
+      body{background:#f8faf9}
+      .appbar{height:52px}
+      .bar-inner{width:calc(100% - 20px)}
+      .mini-brand{font-size:12px;letter-spacing:.08em}
+      .mini-brand img{width:30px;height:30px}
+      .icon-btn{width:35px;height:35px}
+      .main{width:100%;padding:0 0 48px}
+      .profile{border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;padding:18px 14px 13px;background:#fff}
+      .profile:before{display:none}
+      .profile-main{width:100%;grid-template-columns:76px minmax(0,1fr);gap:13px;align-items:start}
+      .avatar-ring{width:74px;height:74px;box-shadow:none}
+      .name-row{gap:6px;flex-wrap:nowrap;min-width:0}
+      .name-row h1{font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .display-name{font-size:13px;margin:3px 0 0}
+      .profile-info .badge{display:none}
+      .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:9px 0 10px}
+      .metric{display:block;text-align:center}
+      .metric b{display:block;font-size:13px;line-height:1.15}
+      .metric span{font-size:9px;color:var(--muted)}
+      .bio{font-size:11px;line-height:1.45}
+      .profile-link{font-size:11px;margin-top:5px}
+      .profile-actions{width:100%;margin-top:13px;grid-template-columns:1fr 1fr 42px;gap:6px}
+      .profile-action{padding:8px 7px;border-radius:9px;font-size:12px}
+      .highlight-strip-scroll{margin-top:14px;padding-bottom:1px}
+      .highlight-strip{width:700px;height:126px;margin-left:0}
+      .highlight-strip>img{width:700px;height:126px}
+      .highlight-strip>button{left:calc(19px + (var(--spot) * 96.5px));top:2px;width:92px;height:120px}
+      .feed-head{margin:20px 14px 12px;gap:10px}
+      .feed-head h2{font-size:18px}
+      .feed-head p{font-size:10px}
+      .filters{gap:5px;max-width:100%;padding-bottom:2px}
+      .filter{padding:7px 11px;font-size:11px}
+      .grid{gap:2px}
+      .tile{border-radius:0}
+      .modal{padding:0;align-items:stretch;background:#fff;backdrop-filter:none}
+      .dialog,.dialog.is-reel{display:flex;width:100%;height:100%;max-width:none;max-height:none;border-radius:0;flex-direction:column;overflow:hidden;animation:none}
+      .dialog .media{flex:0 0 auto;width:min(100vw,41.6vh);height:auto!important;max-height:52vh;aspect-ratio:4/5!important;align-self:center;justify-self:auto}
+      .dialog.is-reel .media{width:min(100vw,30.375vh);height:auto!important;max-height:54vh;aspect-ratio:9/16!important}
+      .dialog .details{flex:1 1 auto;width:100%;height:auto;max-height:none;min-height:0;border-top:1px solid var(--line)}
+      .dhead{flex:0 0 auto;min-height:52px;padding:8px 13px}
+      .dhead img{width:34px;height:34px}
+      .dhead strong{font-size:12px}
+      .dhead span{font-size:9px}
+      .close{font-size:24px;padding:2px 5px}
+      .caption{flex:1 1 auto;min-height:0;padding:12px 16px 16px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+      .caption-title{font-size:16px;margin-bottom:6px}
+      .caption p{font-size:13px;line-height:1.75}
+      .hashtags{font-size:12px;margin-top:10px;line-height:1.65}
+      .engage{flex:0 0 auto;padding:6px 11px 7px;background:#fff}
+      .engage-btn{font-size:22px;padding:3px 7px}
+      .post-meta{margin-top:2px;font-size:8px}
+      .comment-form{display:none}
+      .nav-arrow{width:36px;height:36px;font-size:22px}
+      .nav-arrow.prev{left:9px}.nav-arrow.next{right:9px}
+      .dots{bottom:10px}
+    }
   </style>
 </head>
 <body>
